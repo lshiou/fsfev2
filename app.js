@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('Hello World from node JS!'));
 
 
 app.get('/demo', (req, res) => {
-    res.set('X-tea-drink', Date.now);
+    res.set('X-tea-drink', Date.now());
     res.status(418);
     return res.send('i am a teapot');
 });
